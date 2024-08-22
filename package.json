@@ -12,9 +12,13 @@
   "author": "Muhammadziya",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "inquirer": "^8.0.0",
-    "nodemon": "^3.1.4"
+    "install": "^0.13.0",
+    "mongodb": "^4.17.2",
+    "nodemon": "^3.1.4",
+    "npm": "^10.8.2"
   }
 }
