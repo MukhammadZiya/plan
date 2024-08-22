@@ -83,10 +83,24 @@
 
 // A-TASK
 
-function countLetters(soz, sanoqHarf) {
-  return soz.split(sanoqHarf).length - 1;
+// function countLetters(soz, sanoqHarf) {
+//   return soz.split(sanoqHarf).length - 1;
+// }
+
+// const soz = "Jonibek Sajanim";
+// const sanoqHarf = "n";
+// console.log(countLetters(soz, sanoqHarf));
+
+//TASK- B
+
+const countDigit = (str) => {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (!isNaN(str[i]) && str[i] !== ' ') {  
+      count++;
+    }
+  }
+  return count;
 }
 
-const soz = "Jonibek Sajanim";
-const sanoqHarf = "n";
-console.log(countLetters(soz, sanoqHarf));
+console.log(countDigit("1a2b3c4b5d67891112135")); 
