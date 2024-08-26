@@ -96,15 +96,14 @@
 // const countDigit = (str) => {
 //   let count = 0;
 //   for (let i = 0; i < str.length; i++) {
-//     if (!isNaN(str[i]) && str[i] !== ' ') {  
+//     if (!isNaN(str[i]) && str[i] !== ' ') {
 //       count++;
 //     }
 //   }
 //   return count;
 // }
 
-// console.log(countDigit("1a2b3c4b5d67891112135")); 
-
+// console.log(countDigit("1a2b3c4b5d67891112135"));
 
 //TASK C
 
@@ -122,7 +121,6 @@ class Shop {
     return `${hours}:${minutes}`;
   }
 
- 
   qoldiq() {
     console.log(
       `Hozir ${this._getTime()}da ${this.non}ta non, ${
@@ -130,7 +128,6 @@ class Shop {
       }ta lagmon va ${this.cola}ta cola mavjud!`
     );
   }
-
 
   sotish(mahsulot, miqdor) {
     if (this[mahsulot] >= miqdor) {
@@ -140,7 +137,6 @@ class Shop {
       );
     }
   }
-
 
   qabul(mahsulot, miqdor) {
     this[mahsulot] += miqdor;
@@ -156,4 +152,3 @@ shop.qoldiq();
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldiq();
-
