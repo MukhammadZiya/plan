@@ -107,48 +107,60 @@
 
 //TASK C
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-  _getTime() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, "0");
-    const minutes = String(now.getMinutes()).padStart(2, "0");
-    return `${hours}:${minutes}`;
-  }
+//   _getTime() {
+//     const now = new Date();
+//     const hours = String(now.getHours()).padStart(2, "0");
+//     const minutes = String(now.getMinutes()).padStart(2, "0");
+//     return `${hours}:${minutes}`;
+//   }
 
-  qoldiq() {
-    console.log(
-      `Hozir ${this._getTime()}da ${this.non}ta non, ${
-        this.lagmon
-      }ta lagmon va ${this.cola}ta cola mavjud!`
-    );
-  }
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this._getTime()}da ${this.non}ta non, ${
+//         this.lagmon
+//       }ta lagmon va ${this.cola}ta cola mavjud!`
+//     );
+//   }
 
-  sotish(mahsulot, miqdor) {
-    if (this[mahsulot] >= miqdor) {
-      this[mahsulot] -= miqdor;
-      console.log(
-        `Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`
-      );
-    }
-  }
+//   sotish(mahsulot, miqdor) {
+//     if (this[mahsulot] >= miqdor) {
+//       this[mahsulot] -= miqdor;
+//       console.log(
+//         `Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} sotildi!`
+//       );
+//     }
+//   }
 
-  qabul(mahsulot, miqdor) {
-    this[mahsulot] += miqdor;
-    console.log(
-      `Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`
-    );
-  }
+//   qabul(mahsulot, miqdor) {
+//     this[mahsulot] += miqdor;
+//     console.log(
+//       `Hozir ${this._getTime()}da ${miqdor}ta ${mahsulot} qabul qilindi!`
+//     );
+//   }
+// }
+
+// const shop = new Shop(1, 2, 3);
+
+// shop.qoldiq();
+// shop.sotish("non", 3);
+// shop.qabul("cola", 4);
+// shop.qoldiq();
+
+
+
+//D-TASK 
+
+function same(s1, s2) {
+ 
+  return s1.split('').sort().join('') === s2.split('').sort().join('');
 }
 
-const shop = new Shop(1, 2, 3);
-
-shop.qoldiq();
-shop.sotish("non", 3);
-shop.qabul("cola", 4);
-shop.qoldiq();
+let result = same("asus", "susb");
+console.log(result);
