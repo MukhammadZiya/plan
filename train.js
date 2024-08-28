@@ -153,14 +153,21 @@
 // shop.qabul("cola", 4);
 // shop.qoldiq();
 
+//D-TASK
 
+// function same(s1, s2) {
 
-//D-TASK 
+//   return s1.split('').sort().join('') === s2.split('').sort().join('');
+// }
 
-function same(s1, s2) {
- 
-  return s1.split('').sort().join('') === s2.split('').sort().join('');
+// let result = same("asus", "susb");
+// console.log(result);
+
+//E-TASK
+
+function teskari(chappa) {
+  return chappa.split("").reverse().join("");
 }
 
-let result = same("asus", "susb");
-console.log(result);
+const natija = teskari("Jonibek Sajanim");
+console.log(natija);
