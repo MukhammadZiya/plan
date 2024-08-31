@@ -165,9 +165,29 @@
 
 //E-TASK
 
-function teskari(chappa) {
-  return chappa.split("").reverse().join("");
+// function teskari(chappa) {
+//   return chappa.split("").reverse().join("");
+// }
+
+// const natija = teskari("Jonibek Sajanim");
+// console.log(natija);
+
+// TASK-F
+function findDoublers(harf) {
+  const seen = new Set();
+
+  for (let i = 0; i < harf.length; i++) {
+    let char = harf[i];
+
+    if (seen.has(char)) {
+      return true;
+    }
+
+    seen.add(char);
+  }
+
+  return false;
 }
 
-const natija = teskari("Jonibek Sajanim");
-console.log(natija);
+console.log(findDoublers("Sajanim"));
+console.log(findDoublers("boshliq"));
